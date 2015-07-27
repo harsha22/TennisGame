@@ -53,10 +53,10 @@ public class TennisGame {
 		int d_playerScore = 0;
 		int f_playerScore = 0;
 		for (int i = 0; i < score.length(); i++) {
-			if (score.charAt(i) == 'd') {
+			if (score.charAt(i) == '1') {
 				d_playerScore++;
 			}
-			if (score.charAt(i) == 'f') {
+			if (score.charAt(i) == '2') {
 				f_playerScore++;
 			}
 			firstPlayerScore.add(new Integer(d_playerScore));
