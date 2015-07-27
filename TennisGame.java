@@ -25,8 +25,8 @@ public class TennisGame {
 		int playerTwoScore = secondPlayerScore.get(index);
 		String displayValue = "";
 		boolean isWin = (playerOneScore > 3 || playerTwoScore > 3) && Math.abs(playerOneScore - playerTwoScore) == 2;
-		boolean isDeuce = (playerOneScore > 2 || playerTwoScore > 2) && playerOneScore  == playerTwoScore;
-		boolean isAdvantage = (playerOneScore > 2 || playerTwoScore > 2) && Math.abs(playerOneScore - playerTwoScore) == 1;
+		boolean isDeuce = (playerOneScore > 2 && playerTwoScore > 2) && playerOneScore  == playerTwoScore;
+		boolean isAdvantage = (playerOneScore > 2 && playerTwoScore > 2) && Math.abs(playerOneScore - playerTwoScore) == 1;
 		if (isWin) {
 			displayValue = playerInLead(playerOneScore, playerTwoScore) + " Wins";
 		} else if (isDeuce) {
