@@ -21,7 +21,8 @@ public class TennisGame {
 		secondPlayerScore.add(new Integer(0));
 		this.playerOneName = playerOneName;
 		this.playerTwoName = playerTwoName;
-		calculateScore(scoreString);
+		calculateScore(scoreString);  
+		
 	}
 
 	public String scoreAt(int index) {
