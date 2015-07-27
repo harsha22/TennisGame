@@ -16,7 +16,8 @@ public class TennisGame {
 		firstPlayerScore = new ArrayList<Integer>();
 		secondPlayerScore = new ArrayList<Integer>();
 		calculateScore(scoreString);
-		firstPlayerScore.add(new Integer(0));
+		firstPlayerScore.add(0);
+		secondPlayerScore.add(0);
 	}
 
 	public String scoreAt(int index) {
