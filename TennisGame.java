@@ -16,6 +16,7 @@ public class TennisGame {
 		firstPlayerScore = new ArrayList<Integer>();
 		secondPlayerScore = new ArrayList<Integer>();
 		calculateScore(scoreString);
+		firstPlayerScore.add(new Integer(0));
 	}
 
 	public String scoreAt(int index) {
@@ -42,6 +43,29 @@ public class TennisGame {
 	}
 
 	private void calculateScore(String scoreString) {
+		String score = scoreString.toLowerCase();
+		int d_playerScore = 0;
+		int f_playerScore = 0;
+		for (int i = 0; i < score.length(); i++) {
+			if (score.charAt(i) == 'd') {
+				d_playerScore++;
+			}
+			if (score.charAt(i) == 'f') {
+				f_playerScore++;
+			}
+			firstPlayerScore.add(new Integer(d_playerScore));
+			secondPlayerScore.add(new Integer(f_playerScore));
+
+		}
+	}
+
+	public List<Integer> getFirstPlayerScore() {
+		return firstPlayerScore;
 
 	}
+
+	public List<Integer> getSecondPlayerScore() {
+		return secondPlayerScore;
+	}
+
 }
