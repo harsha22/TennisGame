@@ -3,7 +3,12 @@ package TennisGame;
 public class TennisScore {
 	
 	public static void main(String[] args) {
-		//arg[0] is the input string
-		
+		TennisGame game = new TennisGame("dffdfdfdfdddfdfdff");
+		System.out.println(game.scoreAt(5));
+		TennisGame game2 = new TennisGame("ddddfdfdfdddfdfdff");
+		System.out.println(game2.scoreAt(4));
+		TennisGame game3 = new TennisGame("dfdfdfdfdd");
+		System.out.println(game3.scoreAt(6));
+		System.out.println(game3.scoreAt(7));
 	}
 }
