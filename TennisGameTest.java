@@ -11,6 +11,7 @@ public class TennisGameTest {
 	
 	@Test
 	public void testCalculateScore() {
+
 		TennisGame game = new TennisGame("h","l","211212121");
 		assertEquals("30:30", game.scoreAt(4));
 		assertEquals("40:30", game.scoreAt(5));
