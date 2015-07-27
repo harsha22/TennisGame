@@ -1,15 +1,24 @@
 package TennisGame;
+
+import java.util.ArrayList;
 import java.util.List;
+
 public class TennisGame {
 
 	private List<Integer> firstPlayerScore;
 	private List<Integer> secondPlayerScore;
-	
-	public String scoreAt(int index) {
-	 return null;	
+
+	public TennisGame(String scoreString) {
+		firstPlayerScore = new ArrayList<Integer>();
+		secondPlayerScore = new ArrayList<Integer>();
+		calculateScore(scoreString);
 	}
-	
-	public void calculateScore(String s) {
-		
+
+	public String scoreAt(int index) {
+		return null;
+	}
+
+	private void calculateScore(String scoreString) {
+
 	}
 }
