@@ -11,6 +11,8 @@ public class TennisGame {
 	private static String DEUCE = "Deuce";
 	private static String ADVANTAGE = "Advantage";
 	private static String SEPARATOR  = ":";
+	private String playerOneName;
+	private String PlayerOneName;
 
 	public TennisGame(String scoreString) {
 		firstPlayerScore = new ArrayList<Integer>();
