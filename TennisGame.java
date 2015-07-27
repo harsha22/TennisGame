@@ -18,7 +18,7 @@ public class TennisGame {
 		firstPlayerScore.add(new Integer(0));
 		secondPlayerScore.add(new Integer(0));
 		calculateScore(scoreString);
-			}
+	}
 
 	public String scoreAt(int index) {
 		int playerOneScore = firstPlayerScore.get(index);
@@ -59,14 +59,4 @@ public class TennisGame {
 
 		}
 	}
-
-	public List<Integer> getFirstPlayerScore() {
-		return firstPlayerScore;
-
-	}
-
-	public List<Integer> getSecondPlayerScore() {
-		return secondPlayerScore;
-	}
-
 }
